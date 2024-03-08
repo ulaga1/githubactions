@@ -1,4 +1,4 @@
-const core = require('@actions/core');
+const core = require('@action/core');
 const moment = require('moment');
 
 try {
