@@ -1,0 +1,25 @@
+name: trialexample
+
+# Triggers for the workflow
+on:
+  # Automatic trigger on push events to the master branch
+  push:
+    branches:
+      - main
+
+# Jobs defined in the workflow
+jobs:
+  test-1:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js 
+        uses: actions/setup-node@v3
+        with:
+          node-version: latest
+
+      - name: Run custom action
+        uses: ulaga1/githubactions@main
+
