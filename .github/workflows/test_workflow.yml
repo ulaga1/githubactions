@@ -13,7 +13,8 @@ on:
 jobs:
   actionjob:
     runs-on: ubuntu-latest
+    
     steps: Run custom action
-    uses: ulaga/githubactions@main
+    uses: ulaga1/githubactions@main
 
         
