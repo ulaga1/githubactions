@@ -11,10 +11,15 @@ on:
 
 # Jobs defined in the workflow
 jobs:
-  actionjob:
+  build:
     runs-on: ubuntu-latest
-    
-    steps: Run custom action
-    uses: ulaga1/githubactions@main
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+    steps: 
+      - name: Run custom action
+        uses: ulaga1/githubactions@main
 
         
