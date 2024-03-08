@@ -1,0 +1,19 @@
+# Workflow name
+name: action-workflow
+
+# Triggers for the workflow
+on:
+
+  # Automatic trigger on push events to the master branch
+  push:
+    branches:
+      - main
+
+# Jobs defined in the workflow
+jobs:
+  actionjob:
+    runs-on: ubuntu-latest
+    steps: Run custom action
+    uses: ulaga/githubactions@main
+
+        
