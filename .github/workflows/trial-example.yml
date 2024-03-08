@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: Set up core package
-        uses: npm install @actions/core
+        run: npm install @actions/core
 
       - name: Run custom action
         uses: ulaga1/githubactions@main
